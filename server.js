@@ -3,6 +3,7 @@ const {PrismaClient} = require('@prisma/client');
 const prisma = new PrismaClient;
 const app = express();
 const PORT = 3000;
+import { validaFilme, valideReview } from './util';
 
 app.get('/', (req, res) => {
     res.send('API de Movies rodando....');
@@ -13,7 +14,7 @@ app.use(express.json());
 
 // ################# PARA FILMES ###################
 
-app.post('/create_movie', async (req, res) => {
+app.post('/create_movie', validaFilme, async (req, res) => {
     const {titulo, descricao, anoLancamento, genero} = req.body;
     const filme = await prisma.filme.create({
         data: {titulo, descricao, anoLancamento, genero},
@@ -53,7 +54,7 @@ app.delete('/delete_movie/:id', async (req, res) => {
 
 // ################# PARA REVIEWS ###################
 
-app.post('/create_review', async (req, res) => {
+app.post('/create_review', valideReview, async (req, res) => {
     const {nota, comentario, filmeId} = req.body;
     const review = await prisma.review.create({
         data: {nota, comentario, filmeId},
