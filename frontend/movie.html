@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie_style.css">
+    <script src="movie.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><h1>Movie Manager</h1></a>
+        <div>
+            <a href="movie.html">Criar filme</a>
+            <a href="review.html">Criar Review</a>
+        </div>
+    </nav>
+    
+    <h1>Criador de Filmes</h1>
+    <section>
+        <div id="first_inputs">
+            <label>Title:<br>
+                <input type="text" id="title">
+            </label>
+            <label>Year:<br>
+                <input type="number" id="year">
+            </label>
+            <label>Genre: <br><br>
+            <form>
+                <input type="radio" id="romance" name="genre" value="Romance">
+                <label for="romance">Romance</label><br><br>
+                <input type="radio" id="comedia" name="genre" value="Comedia">
+                <label for="comedia">Comedia</label><br><br>
+                <input type="radio" id="aventura" name="genre" value="Aventura">
+                <label for="aventura">Aventura</label><br><br>
+                <input type="radio" id="terror" name="genre" value="Terror">
+                <label for="terror">Terror</label>
+            </form>
+        </div>
+        <div id="second_inputs">
+            <label>Description:<br>
+                <textarea id="description"></textarea>
+            </label>
+            <button onclick="createMovie()">Create Movie</button>
+        </div>
+    </section>
+</body>
+</html>

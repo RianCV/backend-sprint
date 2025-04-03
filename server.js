@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const {PrismaClient} = require('@prisma/client');
 const { validaFilme, validaReview } = require('./utils/my_util');
 const prisma = new PrismaClient;
@@ -10,6 +11,7 @@ app.get('/', (req, res) => {
     res.send('API de Movies rodando....');
 })
 
+app.use(cors());
 app.use(express.json());
  
 
