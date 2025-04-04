@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="review_style.css">
+    <script src="review.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><h1>Movie Manager</h1></a>
+        <div>
+            <a href="movie.html">Criar filme</a>
+            <a href="review.html">Criar Review</a>
+        </div>
+    </nav>
+    
+    <h1>Criador de Review</h1>
+    <section>
+        <div id="first_inputs">
+            <form>
+                <label>Escolha um filme:</label><br><br>
+                <select name="filmes" id="filmes">
+                    <!-- PRRENCHIDO PELO JAVASCRIPT -->
+                </select>
+            </form>
+            <div>
+                <h3>Nota:</h3><br>
+                <form>
+                    <input type="radio" id="score1" name="score" value="1">
+                    <label for="1">1</label>
+                    <input type="radio" id="score2" name="score" value="2">
+                    <label for="2">2</label>
+                    <input type="radio" id="score3" name="score" value="3">
+                    <label for="3">3</label>
+                    <input type="radio" id="score4" name="score" value="4">
+                    <label for="4">4</label>
+                    <input type="radio" id="score5" name="score" value="5">
+                    <label for="5">5</label>
+                </form>
+            </div>
+        </div>
+        <div id="second_inputs">
+            <label>Description:<br>
+                <textarea id="description"></textarea>
+            </label>
+            <button onclick="createReview()">Create Review</button>
+        </div>
+    </section>
+</body>
+</html>
