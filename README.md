@@ -16,6 +16,15 @@ The goal of this sprint was to develop a movie API using **Express**, **Prisma**
 - 🔗 Integration with **SQLite** using **Prisma**  
 - 🛡️ Optional data validation through **middleware**
 
+## 🛠️ How to Run the Project:
+1. In your terminal, run:
+```bash
+node server.js
+```
+2. Open the ```index.html``` file.
+
+Make sure you have SQLite and node installed.
+
 ## ✅ Results:
 The project was successfully completed!  
 
