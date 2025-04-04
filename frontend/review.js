@@ -19,7 +19,9 @@ async function seeAllMovies() { // FUNCAO PARA PREENCHER O DROPDOWN DINAMICAMENT
 
     } catch (error) {
         console.log('Error loading movies:', error);
-        alert('Failed to load movies');
+        if(error instanceof TypeError){
+            alert('o servidor deve estar aberto para carregar os filmes no dropdown');
+        }
     }
 }
 
@@ -30,8 +32,7 @@ seeAllMovies(); //sempre chama a funcao quando entrar na pagina!
 
 function createReview(){
     const selected_field = document.getElementById('filmes');
-    const id_movie = Number(selected_field.value);
-    const name_movie = selected_field.options[selected_field.selectedIndex].text;                  
+    const id_movie = Number(selected_field.value);                
     let score;
     if (document.getElementById('score1').checked) {
         score = 1;
