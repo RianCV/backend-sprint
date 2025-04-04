@@ -28,7 +28,7 @@ The project was successfully completed!
 ---
 
 
-Apenas para ter nota, aqui está como projetei no figma inicialmente:
+- Just for grading purposes, here is how I initially designed it on Figma:
 <img width="490" alt="image" src="https://github.com/user-attachments/assets/724ecf1e-20f2-4df1-8998-325a7fa461c4" />
 
 
