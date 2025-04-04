@@ -1,28 +1,3 @@
-<!-- # Sprint backend para grupo de estudos *AGES-PUCRS*
-
-## Tecnologias utilizadas:
-1. Prisma (ORM)
-2. SQLite (banco de dados utilizado)
-3. Express (para criação de APIs)
-4. Javascript
-5. HTML e CSS
-
-## Descrição da sprint:
-Utilizar Express.js, Prisma e SQLite par desenvolver uma API para filmes, onde o usuário poderá criar, editar e deletar filmes, além de realizar reviews para um filme específico.
-
-## Funcionalidades Principais:
-- CRUD para filmes
-- CRUD para reviews de filmes
-- Integração com SQLite utilizando Prisma
-- Validação de dados com middlewares (opcional)
-
-## Resultados:
-A tarefa foi concluída com sucesso.
-
-O projeto teve um PLUS de minha parte. Foi adicionado um frontend para possibilitar o usuário a ver filmes que já estão no banco de dados e também fazer operações para criar filmes e reviews.
-
-Embora há possibilidade de deletar e atualizar filmes e reviews via API, essa possibilidade não foi adicionada ao frontend! -->
-
 # 🎬 Backend Sprint for *AGES-PUCRS* Study Group
 
 ## 🚀 Technologies Used:
@@ -54,6 +29,7 @@ The project was successfully completed!
 
 
 Apenas para ter nota, aqui está como projetei no figma inicialmente:
-![alt text](image.png)
+<img width="490" alt="image" src="https://github.com/user-attachments/assets/724ecf1e-20f2-4df1-8998-325a7fa461c4" />
+
 
 📁 *This sprint serves as a hands-on project to deepen backend development skills and API integration using modern JavaScript tooling.*
