@@ -19,8 +19,10 @@ The goal of this sprint was to develop a movie API using **Express**, **Prisma**
 ## 🛠️ How to Run the Project:
 1. In your terminal, run:
 ```bash
+npm install express
 node server.js
 ```
+
 2. Open the ```index.html``` file.
 
 Make sure you have SQLite and node installed.
